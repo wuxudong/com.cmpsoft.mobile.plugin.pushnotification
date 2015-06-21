@@ -105,7 +105,7 @@ public class PushNotification extends CordovaPlugin
 				e.printStackTrace();
 			}
 		}
-		if (this.pushCallbackContext != null) 
+		if (this.pushCallbackContext != null && info != null) 
 		{
 	        PluginResult result = new PluginResult(PluginResult.Status.OK, info);
 	        result.setKeepCallback(false);
