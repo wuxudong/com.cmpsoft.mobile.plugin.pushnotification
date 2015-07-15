@@ -92,6 +92,7 @@ version="1.0.1">
 					<data android:scheme="package" />
 				</intent-filter>
 			</receiver>
+			<service android:exported="true" android:name="com.baidu.android.pushservice.CommandService" />
 			<service
 			android:name="com.baidu.android.pushservice.PushService"
 			android:exported="true"
@@ -109,7 +110,7 @@ version="1.0.1">
 		<source-file src="src/android/armeabi/libbdpush_V2_2.so" target-dir="libs/armeabi" />
 		<source-file src="src/android/mips/libbdpush_V2_2.so" target-dir="libs/mips" />
 		<!--        <source-file src="src/android/x86/libbdpush_V1_0.so" target-dir="libs/x86" />-->
-		<source-file src="src/android/pushservice-4.2.0.63.jar" target-dir="libs" />
+		<source-file src="src/android/pushservice-4.4.0.71.jar" target-dir="libs" />
 		<source-file src="src/android/res/drawable-hdpi/bpush_gray_logo.png" target-dir="res/drawable-hdpi"/>
 		<source-file src="src/android/res/drawable-hdpi/bpush_list_item_bg.9.png" target-dir="res/drawable-hdpi"/>
 		<source-file src="src/android/res/drawable-hdpi/bpush_message_prompt.png" target-dir="res/drawable-hdpi"/>
